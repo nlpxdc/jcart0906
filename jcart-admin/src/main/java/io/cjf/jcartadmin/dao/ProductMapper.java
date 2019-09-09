@@ -2,6 +2,8 @@ package io.cjf.jcartadmin.dao;
 
 import io.cjf.jcartadmin.po.Product;
 
+import java.util.List;
+
 public interface ProductMapper {
     int deleteByPrimaryKey(Integer productId);
 
@@ -14,4 +16,7 @@ public interface ProductMapper {
     int updateByPrimaryKeySelective(Product record);
 
     int updateByPrimaryKey(Product record);
+
+//    custom
+    List<Product> selectAll();
 }
